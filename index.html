@@ -1,0 +1,102 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulário.css" media="">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Alunos</h1>
+        <p id="subtitulo">Informe seus dados</p>
+        <br>
+    </div>
+   <form>
+       <fieldset class="grupo">
+           <div class="campo">
+              <label for="Nome">Nome</label>
+              <input type="text"name="Nome"id="Nome"required>
+           </div>
+           <div class="campo"> 
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text"name="Sobrenome"id="Sobrenome"required>
+           </div>
+
+           <div class="campo">
+            <label for="número de celular">Número de celular</label>
+            <input type="text"Name="número de celular"id="número de celular"required>
+           </div>
+
+           <div class="campo">
+            <label for="E-mail">E-mail Institucional</label>
+            <input type="email"Name="E-mail Institucional"id="E-mail"required>
+           </div>
+       </fieldset>
+
+      
+
+       <div class="campo">
+           <label for="Turno">Turno: </label>
+           <label>
+               <input type="radio" name="Turno" value="Manhã"> Manhã
+           </label>
+           <label>
+              <input type="radio" name="Turno" value="Tarde"> Tarde
+           </label>
+           <label>
+             <input type="radio" name="Turno" value="Noite"> Noite
+           </label>
+       </div>
+       <div class="campo">
+           <label>Qual período do Técnico você está?</label>
+           <select id="Qual perído do Técnico você está?">
+               <option selected disabled value="">Selecione</option>
+               <option> Primeiro</option>
+               <option>Segundo </option>
+               <option>Terceiro </option>
+               <option>Quarto </option>
+
+           </select>
+       </div>
+       <fieldset class="grupo">
+           <div class="campo">
+               <label>Selecione as matérias do técnico que vc cursa no momento: </label> <br><br>
+               <input type="checkbox" name="matéria1" value="Informática">
+               <label for="matéria1">Informática</label>
+
+               <input type="checkbox" name="matéria2" value="Algoritmos">
+               <label for="matéria2">Algoritmos</label>
+
+               <input type="checkbox" name="matéria3" value="Linguagem de Programação">
+               <label for="matéria3">Linguagem de Programação</label>
+
+               <input type="checkbox" name="matéria4" value="Instalação e manutenção de computadores">
+               <label for="matéria4">Instalação e manutenção de  computadores</label>
+
+               <input type="checkbox" name="matéria5" value="Redes">
+               <label for="matéria5">Redes</label>
+
+               <input type="checkbox" name="matéria6" value="Desenvolvimento Web">
+               <label for="matéria6">Desenvolvimento Web</label>
+
+               <input type="checkbox" name="matéria7" value="Banco de dados">
+               <label for="matéria7">Banco de Dados </label>
+           </div>
+       </fieldset>
+       <div class="campo">
+           <br>
+           <label>Conte oque mais gosta no técnico </label>
+           <br>
+           <textarea rows="2" style="width: 30em" id="técnico" name="técnico"></textarea>
+       </div>
+       <div class="campos">
+        <button class="botao" type="submit">Enviar</button>
+
+       </div>
+       
+   </form>
+</body>
+</html>
